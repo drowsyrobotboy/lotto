@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "export": "next build && next export"
   },
   "dependencies": {
     "next": "11.1.2",
@@ -13,7 +14,9 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "@fontsource/niconne": "^4.5.0",
     "@types/react": "17.0.20",
+    "bulma": "^0.9.3",
     "typescript": "4.4.3"
   }
 }
