@@ -86,19 +86,14 @@ export default function Home(): JSX.Element {
       </Head>
       <nav className="navbar is-light" role="navigation" aria-label="main navigation">
         <div className="navbar-brand">
-          <a className="navbar-item has-text-info is-size-4" href=".">
-            Lotto
-          </a>
-        </div>
-        <div className="navbar-end">
           <div className="navbar-item">
             <div className="buttons">
-              <a className="button is-info is-size-3" onClick={() => handlePick()}>
-                <strong>{(lottoNumber==0)?'Pick Number':(lottoNumber==-1)?'Game Over':'Current Number: ' + lottoNumber}</strong>
+              <a className="button is-dark is-size-3" onClick={() => handlePick()}>
+                <strong>{(lottoNumber==0)?'Lotto 👆🏻':(lottoNumber==-1)?'Game Over 🎉':'Lotto: ' + lottoNumber}</strong>
               </a>
             </div>
           </div>
-    </div>
+        </div>
       </nav>
       <section className="section">
         <div className="container is-fluid has-text-centered">
